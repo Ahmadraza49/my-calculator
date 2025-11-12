@@ -1,4 +1,4 @@
-/* Background image with blur overlay */
+
 .bg-wrapper {
   background-image: url('https://images.unsplash.com/photo-1581090700227-1e37b190418e');
   background-size: cover;
@@ -11,7 +11,7 @@
   backdrop-filter: blur(2px);
 }
 
-/* Calculator styling */
+
 .calculator {
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.6);
@@ -19,7 +19,7 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
-/* Display design */
+
 #display {
   font-size: 1.6rem;
   height: 65px;
@@ -30,7 +30,7 @@
   box-shadow: inset 0 0 8px rgba(0, 255, 200, 0.5);
 }
 
-/* Button design */
+
 button {
   font-size: 1.2rem;
   border-radius: 12px !important;
@@ -56,11 +56,12 @@ button:active {
   background: #e74c3c;
 }
 
-/* History box */
+
 #history {
   max-height: 150px;
   overflow-y: auto;
   border-radius: 10px;
 }
+
 
 
