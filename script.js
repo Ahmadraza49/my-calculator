@@ -2,22 +2,22 @@ const display = document.getElementById("display");
 const historyList = document.getElementById("history");
 let memory = parseFloat(localStorage.getItem("calcMemory")) || 0;
 
-// Append to display
+
 function append(value) {
   display.value += value;
 }
 
-// Clear display
+
 function clearDisplay() {
   display.value = "";
 }
 
-// Backspace
+
 function backspace() {
   display.value = display.value.slice(0, -1);
 }
 
-// Calculate
+
 function calculate() {
   try {
     const result = eval(display.value);
@@ -30,7 +30,7 @@ function calculate() {
   }
 }
 
-// History
+
 function addToHistory(entry) {
   let history = JSON.parse(localStorage.getItem("calcHistory")) || [];
   history.push(entry);
@@ -76,5 +76,6 @@ function memoryClear() {
   localStorage.removeItem("calcMemory");
 }
 
-// Load on start
+
 loadHistory();
+
